@@ -1,0 +1,42 @@
+<head>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-rows: minmax(20px, 1fr) repeat(6, minmax(0, 45px)) minmax(
+          30px,
+          1fr
+        );
+      grid-gap: 20px;
+    }
+    .grid div {
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+    .grid div p {
+      padding: 5px;
+    }
+    .full {
+      grid-column: 1 / -1;
+    }
+    .wrapper {
+      grid-column: 2 / -2;
+    }
+    .left {
+      grid-column: 1 / -2;
+    }
+    .right {
+      grid-column: 4 / -2;
+    }
+  </style>
+</head>
+<body>
+  <!-- grid wrapper pattern for aligning grid content in main wrapper, while allowing items to break and align to edge of container element when needed -->
+  <div class="grid">
+    <div class="wrapper">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+    <div class="full"><p>Aliquam tincidunt mauris eu risus.</p></div>
+    <div class="left"><p>Vestibulum auctor dapibus neque.</p></div>
+    <div class="right"><p>Nunc dignissim risus id metus.</p></div>
+  </div>
+</body>
