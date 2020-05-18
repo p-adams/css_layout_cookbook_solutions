@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style>
+      li {
+        list-style: none;
+      }
+      .main-nav {
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      .login {
+        margin-left: auto;
+      }
+      li > a {
+        padding: 0.5em 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- split navigation is a pattern where one or more nav elements are separated from the rest of the navigation -->
+    <nav>
+      <ul class="main-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li class="login"><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

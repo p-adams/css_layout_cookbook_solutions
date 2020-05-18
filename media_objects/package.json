@@ -1,0 +1,12 @@
+{
+  "name": "media_objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "padams",
+  "license": "ISC"
+}

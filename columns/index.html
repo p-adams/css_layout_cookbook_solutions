@@ -1,0 +1,91 @@
+<head>
+  <style>
+    .multicol-container {
+      column-width: 10em;
+      column-rule: 1px solid rgb(75, 70, 74);
+      padding: 20px;
+      border: 1px solid gray;
+      border-radius: 0.5em;
+    }
+    .flex-container {
+      display: flex;
+    }
+    .flex-container > * {
+      margin: 0 10px;
+      flex: 1;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    .grid-container > p {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <!-- multi-column layout (for continuous thread of content like newspaper -->
+  <div class="multicol-container">
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+      Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse
+      urna nibh, viverra non, semper suscipit, posuere a, pede.
+    </p>
+    <p>
+      Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris
+      sit amet orci. Aenean dignissim pellentesque felis.
+    </p>
+    <p>
+      Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in,
+      pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+    </p>
+    <p>
+      Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae,
+      eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+      tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+    </p>
+  </div>
+  <!-- column with flexbox layout (for a single row of items w/equal heights) -->
+  <div class="flex-container">
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+      Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse
+      urna nibh, viverra non, semper suscipit, posuere a, pede.
+    </p>
+    <p>
+      Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris
+      sit amet orci. Aenean dignissim pellentesque felis.
+    </p>
+    <p>
+      Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in,
+      pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+    </p>
+    <p>
+      Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae,
+      eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+      tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+    </p>
+  </div>
+  <!-- column grid layout (for lining items up in rows and columns -->
+  <div class="grid-container">
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+      Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse
+      urna nibh, viverra non, semper suscipit, posuere a, pede.
+    </p>
+    <p>
+      Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris
+      sit amet orci. Aenean dignissim pellentesque felis.
+    </p>
+    <p>
+      Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in,
+      pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+    </p>
+    <p>
+      Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae,
+      eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+      tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+    </p>
+  </div>
+</body>

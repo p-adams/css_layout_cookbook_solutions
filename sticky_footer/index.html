@@ -1,0 +1,38 @@
+<head>
+  <style>
+    .wrapper {
+      height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+    .page-header {
+      background-color: lightskyblue;
+    }
+    .page-footer {
+      text-align: center;
+      background-color: lightsteelblue;
+    }
+    .flex-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .flex-page-header,
+    .flex-page-footer {
+      flex-shrink: 0;
+    }
+    .flex-page-content {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- sticky footer pattern is one where the footer sticks to the bottom of the viewport when content is short -->
+  <div class="wrapper">
+    <header class="page-header">Cats</header>
+    <article class="page-content">
+      <p>A page on cats</p>
+    </article>
+    <footer class="page-footer">&copy; 2020 by Cats</footer>
+  </div>
+</body>

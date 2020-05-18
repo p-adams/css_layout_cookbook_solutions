@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+      li {
+        padding: 12px 24px;
+      }
+      li::before {
+        padding: 24px;
+        content: "→";
+      }
+      li:first-child::before {
+        content: "";
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- breadcrumb navigation helps the user understand location w/trail back to the start page -->
+    <nav>
+      <ul>
+        <li>Book</li>
+        <li>Chapter</li>
+        <li>Section</li>
+      </ul>
+    </nav>
+  </body>
+  <script>
+    const listItems = document.getElementsByTagName("li");
+    ((items) => {
+      [...items].map((item) => {
+        let { innerText } = item;
+        let link = document.createElement("a");
+        link.setAttribute("href", "#");
+        link.textContent = innerText;
+        item.innerText = "";
+        item.appendChild(link);
+        return item;
+      });
+    })(listItems);
+  </script>
+</html>

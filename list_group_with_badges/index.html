@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      #list {
+        border: 1px solid lightskyblue;
+        border-radius: 0.5em;
+        margin: 0;
+        padding: 0;
+        width: 20em;
+        list-style: none;
+      }
+      #list li {
+        display: flex;
+        padding: 0.5em;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid lightskyblue;
+      }
+      #list li:first-child {
+        border-top: 0;
+      }
+      .badge {
+        padding: 12px 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- list group pattern using badges to denote count -->
+    <ul id="list"></ul>
+  </body>
+  <script>
+    ((list) => {
+      [
+        { text: "Apples", badge: "🍎" },
+        { text: "Bananas", badge: "🍌" },
+        { text: "Pears", badge: "🍐" },
+        { text: "Grapes", badge: "	🍇" },
+      ]
+        .map((item) => {
+          const $span = document.createElement("span");
+          $span.textContent = item.badge;
+          $span.setAttribute("class", "badge");
+          $span.textContent;
+          const $li = document.createElement("li");
+          $li.textContent = item.text;
+          $li.appendChild($span);
+          return $li;
+        })
+        .map((l) => {
+          list.appendChild(l);
+        });
+    })(document.getElementById("list"));
+  </script>
+</html>
